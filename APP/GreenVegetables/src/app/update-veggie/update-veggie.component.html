@@ -1,0 +1,21 @@
+<u>Updating records for Vegetable:</u>
+<table>
+  <tr>
+    <td>ID: </td>
+    <td>{{id}}</td>
+  </tr>
+  <tr>
+    <td><Label for="Name">Name:</Label></td>
+    <td>
+      <input type="text" name="Name" id="Name" title="Name" value="{{veggie?.Name}}" #name>
+    </td>
+  </tr>
+  <tr>
+    <td><Label for="Price">Price:</Label></td>
+    <td>
+      <input type="text" name="Price" id="Price" title="Price" value="{{veggie?.Price}}" #price>
+    </td>
+  </tr>
+</table>
+<button type="submit" (click)="UpdateVeggie(name.value, price.value)">Update Data</button>&nbsp;&nbsp;
+<a routerLink="">Go Back</a>

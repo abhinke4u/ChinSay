@@ -1,0 +1,17 @@
+<u>Adding a new Vegetable:</u>
+<table>
+  <tr>
+    <td><Label for="Name">Name:</Label></td>
+    <td>
+      <input type="text" name="Name" id="Name" title="Name" value="{{veggie?.Name}}" #name>
+    </td>
+  </tr>
+  <tr>
+    <td><Label for="Price">Price:</Label></td>
+    <td>
+      <input type="number" name="Price" id="Price" title="Price" value="{{veggie?.Price}}" #price>
+    </td>
+  </tr>
+</table>
+<button type="submit" (click)="AddVeggie(name.value, price.value)">Add New Vegetable</button>&nbsp;&nbsp;
+<a routerLink="">Go Back</a>

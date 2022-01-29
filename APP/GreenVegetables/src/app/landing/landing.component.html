@@ -1,0 +1,19 @@
+<u>List of all available vegetables in the mart:</u>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr *ngFor="let veggie of vegetables">
+    <td>{{veggie.ID}}</td>
+    <td>{{veggie.Name}}</td>
+    <td>{{veggie.Price}}</td>
+    <td><a routerLink="update-veggie/{{veggie.ID}}">Update</a></td>
+    <td><a routerLink="delete-veggie/{{veggie.ID}}">Delete</a></td>
+  </tr>
+</table>
+<br><br>
+<a routerLink="add-veggie">Add New Vegetable</a>
